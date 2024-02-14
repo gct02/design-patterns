@@ -76,34 +76,22 @@ class Circle(Shape):
 class ShapeFactory(ABC):
     __metaclass__ = ABCMeta
 
-    def __init__(self):
-        pass
-
     @abstractmethod
     def create_shape(self) -> Shape:
         return
 
 # Concrete factory 1
 class SquareFactory(ShapeFactory):
-    def __init__(self):
-        pass
-
     def create_shape(self) -> Shape:
         return Square(None)
 
 # Concrete factory 2
 class RectangleFactory(ShapeFactory):
-    def __init__(self):
-        pass
-
     def create_shape(self) -> Shape:
         return Rectangle(None, None)
 
 # Concrete factory 3
 class CircleFactory(ShapeFactory):
-    def __init__(self):
-        pass
-
     def create_shape(self) -> Shape:
         return Circle(None)
     

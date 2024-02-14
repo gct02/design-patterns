@@ -3,9 +3,6 @@ from abc import ABC, ABCMeta, abstractmethod
 class Shape(ABC):
     __metaclass__ = ABCMeta
 
-    def __init__(self):
-        pass
-
     @abstractmethod
     def clone(self):
         pass
